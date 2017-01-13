@@ -90,6 +90,9 @@ var server = http.createServer ( function ( req , res ) {
 
 				}
                         
+				// reorder so last search terms come first
+				lastTerms.reverse() ;
+
 				db.close ( ) ;
 
 				res.writeHead ( 200 , { 'Content-Type': 'application/json' } ) ;
