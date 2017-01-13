@@ -121,6 +121,8 @@ var server = http.createServer ( function ( req , res ) {
 			} ) ;
 
 		} ;
+
+		res.end( 'noop' ) ;
 	} ) ;
 } ) ;
 
