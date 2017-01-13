@@ -103,7 +103,7 @@ var server = http.createServer ( function ( req , res ) {
 
                 } else {
 			
-			var pageNum = url.parse( req.url , true ).query.page || 1 ;
+			var pageNum = url.parse( req.url , true ).query.offset || 1 ;
 
 			terms.insert ( { "term" :  uri } , function ( err,  data )  {
                         	if ( err ) throw err ;
