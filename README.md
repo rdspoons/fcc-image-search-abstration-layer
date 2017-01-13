@@ -24,3 +24,18 @@ returns the 3rd page of results.
 http://<host>
 returns the last 10 query terms.
 
+Dependencies:
+npm http
+npm url
+npm request
+npm mongodb
+A Custom Google Search
+Environment Variables:
+ MONGOLAB_URI=<URI of Mongo DB>
+ GOOGLE_API_KEY=<Google API key for the Google Custom Search>
+ GOOGLE_CX_NUM=<Number of the Google Custom Search>
+ GOOGLE_CX_APP=<App id of the Google Custom Search>
+
+example Google CX: 0123456789:abcd-efg
+ Number (CX_NUM) = 0123456789
+ App id (CX_APP) = abcd-efg
